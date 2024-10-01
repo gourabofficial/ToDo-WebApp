@@ -31,8 +31,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         li.innerHTML = `
             <span>${task.name}</span>
-            <button class="delete">Delete</button>
-            <button class="edit">Edit</button>
+            <div>
+                <button class="delete">Delete</button>
+                <button class="edit">Edit</button>
+            </div>
         `;
 
         li.querySelector('.delete').addEventListener('click', (e) => {
